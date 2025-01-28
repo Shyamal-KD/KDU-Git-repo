@@ -1,3 +1,4 @@
+
 public class PrimeExample {
     public static void main(String args[]) {
         int n = 3;
@@ -17,6 +18,54 @@ public class PrimeExample {
             } else {
                 System.out.println(n + " is not a prime number");
             }
+        }
+    }
+}
+
+git public class prime number
+{
+
+	public static void main(String[] args)
+	{
+		int no=10;
+		int count=0;
+		for(int i=1;i<=no;i++)
+		{
+			if(no%i==0)
+			{
+				count++;
+			}
+		}
+		if(count==2)
+		{
+			System.out.println("its a prime");
+		}
+		else
+		{
+			System.out.println("not a prime");
+		}
+
+	}
+
+public class Prime {
+
+    public static boolean isPrime(int num) {
+        if (num <= 1) {
+            return false; // 0 and 1 are not prime
+        }
+        for (int i = 2; i <= Math.sqrt(num); i++) {
+            if (num % i == 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+    public static void main(String[] args) {
+        int number = 29;
+        if (isPrime(number)) {
+            System.out.println(number + " is a prime number.");
+        } else {
+            System.out.println(number + " is not a prime number.");
         }
     }
 }
